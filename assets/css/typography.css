@@ -1,46 +1,69 @@
 h1 {
-  color: #fff;
   font-size: 4em;
   margin: 0;
 }
 
 .home h1 {
-  color: black;
-  margin-bottom: 20px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.about h1,
+.contact h1 {
+  color: #000;
+  text-align: center;
+  position: relative;
+  top: 100px;
 }
 
 .content a {
   color: #fff;
   text-decoration: none;
   text-transform: capitalize;
-  border: 2px solid;
+  border: 2px solid #fff;
+  font-size: 2em;
   padding: 5px 20px;
+  transition-property: background-color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
-.about-heading {
-  color: black;
+
+.content a:hover {
+  background-color: #fff;
+  border-color: #26d6cd;
+  /* color: #f33; */
 }
 
 .home nav.navigation a {
-  color: #black;
+  color: #fff;
 }
 
-nav.navigation {
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
+.about nav.navigagion a,
+.contact nav.navigation a {
+  color: #000;
 }
 
 nav.navigation a {
-  color: black;
   text-decoration: none;
   text-transform: capitalize;
   margin: 0 20px;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: ;
-  animation-name: flash;
+  animation-iteration-count: infinite;
+  display: inline-block;
 }
 
 nav.navigation a:hover {
-  color: blue;
+  animation-name: flash;
+}
+
+@keyframes flash {
+  from {
+    color: #fff;
+    scale: 1;
+  }
+  to {
+    color: #26d6cd;
+    scale: 1.1;
+  }
 }

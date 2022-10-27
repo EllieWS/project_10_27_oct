@@ -1,6 +1,7 @@
 .background {
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://picsum.photos/id/1065/2550/1440);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://picsum.photos/id/1065/2550/1440);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,41 +10,44 @@
 
 .content {
   position: absolute;
-  border: 2px dashed red;
+  text-align: center;
+  /* border: 2px dashed red; */
   top: 50%;
   left: 50%;
-  translate: -50% -50%; */
+  translate: -50% -50%;
   transition-property: background-color, border-color, color;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
 .content a:hover {
-  background-color: #ff;
-  border-color: #f33;
-  color: #f33;
+  background-color: #26d6cd;
+  color: #fff;
+}
+
+.h1 {
+  position: absolute;
+  text-align: center;
+  /* border: 2px dashed red; */
+  top: 15%;
+  left: 50%;
+  translate: -50% -50%;
 }
 
 header {
-  left: 50%;
   position: absolute;
-  text-align: center
-  top: 50%;
-   z-index: 1;
-  border: 3px solid black;
+  z-index: 1;
+  /* border: 3px solid black; */
   width: 100%;
 }
 
-svg {
-  width: 100px;
+nav.navigation {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
 }
 
-.thumb-up {
-width: 100px;
-}
-
-.image {
-  width: 400px;
-  height: 400px;
-  Object-fit: cover;
-Object-position: center;
+.about .navigation,
+.contact .navigation {
+  background-color: #0f787b;
+  position: relative;
 }
