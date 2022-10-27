@@ -1,0 +1,46 @@
+h1 {
+  color: #fff;
+  font-size: 4em;
+  margin: 0;
+}
+
+.home h1 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.content a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 2px solid;
+  padding: 5px 20px;
+}
+.about-heading {
+  color: black;
+}
+
+.home nav.navigation a {
+  color: #black;
+}
+
+nav.navigation {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+nav.navigation a {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0 20px;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: ;
+  animation-name: flash;
+}
+
+nav.navigation a:hover {
+  color: blue;
+}
